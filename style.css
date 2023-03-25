@@ -65,6 +65,7 @@ button{
     line-height: 17.65px;
     font-weight: 500;
     color: var(--dark-gray);
+    cursor: pointer;
 }
 
 main{
@@ -128,7 +129,7 @@ a{
     gap: 6px;
 }
 
-.dot{
+.unread .dot{
     background-color: var(--red);
     border-radius: 50%;
     width: 8px;
@@ -143,7 +144,7 @@ a{
     color: var(--dark-gray);
 }
 
-.remove{
+.unread{
     background-color: #F7FAFD;
     border-radius: 8px;
 }
