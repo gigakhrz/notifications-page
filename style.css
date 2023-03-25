@@ -68,6 +68,10 @@ button{
     cursor: pointer;
 }
 
+button:hover{
+    color: #0A327B;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -105,6 +109,11 @@ h2{
     font-weight: 800;
     line-height: 18px;
     color: var(--very-dark-gray);
+}
+
+h2:hover{
+    cursor: pointer;
+    color: var(--blue);
 }
 
 span{
@@ -158,13 +167,20 @@ a{
     font-weight: 700;
     line-height: 18px;
     margin-left: 6px;
+    cursor: pointer;
 }
 
 .private-message{
     padding: 16px;
     width: 263px;
-    border: 1px solid var(--dark-gray);
+    border: 1px solid #DDE7EE;
     margin-top: 9px;
+    border-radius: 5px;
+}
+
+.private-message:hover{
+    cursor: pointer;
+    background-color: #E5EFFA;
 }
 
 .private{
@@ -181,4 +197,103 @@ a{
 .chess-girl{
     margin-top: 3px;
     margin-left: 29px;
+}
+
+@media screen and (min-width:1024px) {
+
+    body{
+        padding: 0 30px;
+        gap: 31px;
+    }
+
+    header{
+        width: 670px;
+        margin-top: 33px;
+    }
+
+    h1{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .header-container{
+        gap: 11px;
+    }
+
+    .notification-quantity{
+        width: 35px;
+    }
+
+    button{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .notifications{
+        width: 670px;
+        padding: 19px;
+        gap: 19px;
+    }
+
+    img{
+        width: 45px;
+        height: 45px;
+    }
+
+    .text-container{
+        width: 520px;
+    }
+
+    h2{
+        width: 500px;
+    }
+    
+    .mark{
+        min-width: 540px;
+    }
+
+    .marks{
+        margin-left: -35px;
+    }
+
+    .angela{
+        width: 205px;
+    }
+
+    .jacob{
+        width: 390px;
+    }
+
+    .nathan{
+        width: 100%;
+    }
+
+    h2, span{
+        font-size: 16px;
+        line-height: 20.16px;
+    }
+
+    .chess-h2{
+        width: 340px;
+    }
+
+    .private-message{
+        width: 566px;
+    }
+
+    .private{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .chess-girl{
+        width: 45px;
+        height: 45px;
+        margin-right: -55px;
+    }
+
+    .Kimberly-content{
+        justify-content: space-between;
+    }
+    
 }
